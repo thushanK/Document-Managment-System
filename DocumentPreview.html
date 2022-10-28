@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>Document Uploader</title>
+		<title>Document Preview</title>
 
 		<!-- Site favicon -->
 		<link
@@ -41,6 +41,14 @@
 			rel="stylesheet"
 			type="text/css"
 			href="vendors/styles/icon-font.min.css"
+		/>
+		<!-- Slick Slider css -->
+		<link rel="stylesheet" type="text/css" href="src/plugins/slick/slick.css" />
+		<!-- bootstrap-touchspin css -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.css"
 		/>
 		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
@@ -487,7 +495,7 @@
 								><span class="mtext">Forms</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="form-basic.html">Document Uploader</a></li>
+								<li><a href="form-basic.html">Form Basic</a></li>
 								<li>
 									<a href="advanced-components.html">Advanced Components</a>
 								</li>
@@ -694,9 +702,9 @@
 				<div class="min-height-200px">
 					<div class="page-header">
 						<div class="row">
-							<div class="col-md-6 col-sm-12">
+							<div class="col-md-12 col-sm-12">
 								<div class="title">
-									<h4>Form</h4>
+									<h4>Document Preview</h4>
 								</div>
 								<nav aria-label="breadcrumb" role="navigation">
 									<ol class="breadcrumb">
@@ -704,224 +712,146 @@
 											<a href="index.html">Home</a>
 										</li>
 										<li class="breadcrumb-item active" aria-current="page">
-											Document Uploader
+											Document Preview
 										</li>
 									</ol>
 								</nav>
 							</div>
-							<div class="col-md-6 col-sm-12 text-right">
-								<div class="dropdown">
-									<a
-										class="btn btn-secondary dropdown-toggle"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										October 2022
-									</a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Export List</a>
-										<a class="dropdown-item" href="#">Policies</a>
-										<a class="dropdown-item" href="#">View Assets</a>
+						</div>
+					</div>
+					<div class="product-wrap">
+						<div class="product-detail-wrap mb-30">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<!-- <div class="product-slider slider-arrow"> -->
+										<div class="product-slide">
+											<img src="vendors/images/Meetingminutes.png" alt="" />
+										</div>
+										<!-- <div class="product-slide">
+											<img src="vendors/images/product-img2.jpg" alt="" />
+										</div>
+										<div class="product-slide">
+											<img src="vendors/images/product-img3.jpg" alt="" />
+										</div>
+										<div class="product-slide">
+											<img src="vendors/images/product-img4.jpg" alt="" />
+										</div> -->
+									<!-- </div> -->
+									<!-- <div class="product-slider-nav">
+										<div class="product-slide-nav">
+											<img src="vendors/images/product-img1.jpg" alt="" />
+										</div>
+										<div class="product-slide-nav">
+											<img src="vendors/images/product-img2.jpg" alt="" />
+										</div>
+										<div class="product-slide-nav">
+											<img src="vendors/images/product-img3.jpg" alt="" />
+										</div>
+										<div class="product-slide-nav">
+											<img src="vendors/images/product-img4.jpg" alt="" />
+										</div>
+									</div> -->
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<div class="product-detail-desc pd-20 card-box height-100-p">
+										<h4 class="mb-20 pt-20">Meeting Minutes</h4>
+										<p>
+											Keeping meeting minutes just got a lot easier. This simple meeting minutes template has a straightforward format so it’s easy to share what topics were discussed. You’ll find fields for an attendee list, agenda topics, and an action item section that lists task owner and deadline. Use the minutes of meeting template for notetaking during the meeting or to organize your notes before sending out for approval. Download this meeting minutes template with its matching agenda template for your next meeting.
+										</p>
+										<!-- <p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p> -->
+										<!-- <div class="price"><del>$55.5</del><ins>$49.5</ins></div> -->
+										<!-- <div class="mx-w-150">
+											<div class="form-group">
+												<label class="text-blue">quantity</label>
+												<input
+													id="demo3_22"
+													type="text"
+													value="1"
+													name="demo3_22"
+												/>
+											</div> -->
+											<div class="row">
+												<div class="col-md-8 col-8">
+													<form method="get" action="fonts/Docs/MeetingMinutes.docx">
+														<button type="submit" class="btn btn-primary btn-block">Download</button>
+													 </form>
+													<!-- <a href="#" class="btn btn-primary btn-block"
+														>Download</a
+													> -->
+												</div>
+												<!-- <div class="col-md-6 col-6">
+													<a href="#" class="btn btn-outline-primary btn-block"
+														>Buy Now</a
+													>
+												</div> -->
+											</div>
+										</div>
+										
+										
 									</div>
 								</div>
 							</div>
 						</div>
+						<!-- <h4 class="mb-20">Recent Product</h4>
+						<div class="product-list">
+							<ul class="row">
+								<li class="col-lg-4 col-md-6 col-sm-12">
+									<div class="product-box">
+										<div class="producct-img">
+											<img src="vendors/images/product-img1.jpg" alt="" />
+										</div>
+										<div class="product-caption">
+											<h4><a href="#">Gufram Bounce Black</a></h4>
+											<div class="price"><del>$55.5</del><ins>$49.5</ins></div>
+											<a href="#" class="btn btn-outline-primary">Read More</a>
+										</div>
+									</div>
+								</li>
+								<li class="col-lg-4 col-md-6 col-sm-12">
+									<div class="product-box">
+										<div class="producct-img">
+											<img src="vendors/images/product-img2.jpg" alt="" />
+										</div>
+										<div class="product-caption">
+											<h4><a href="#">Gufram Bounce White</a></h4>
+											<div class="price"><del>$75.5</del><ins>$50</ins></div>
+											<a href="#" class="btn btn-outline-primary"
+												>Add To Cart</a
+											>
+										</div>
+									</div>
+								</li>
+								<li class="col-lg-4 col-md-6 col-sm-12">
+									<div class="product-box">
+										<div class="producct-img">
+											<img src="vendors/images/product-img3.jpg" alt="" />
+										</div>
+										<div class="product-caption">
+											<h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
+											<div class="price">
+												<ins>$80</ins>
+											</div>
+											<a href="#" class="btn btn-outline-primary"
+												>Add To Cart</a
+											>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div> -->
 					</div>
-					<!-- Default Basic Forms Start -->
-					<div class="pd-20 card-box mb-30">
-						<div class="clearfix">
-							<div class="pull-left">
-								<h4 class="text-blue h4">Document Uploader</h4>
-								<!-- <p class="mb-30">All bootstrap element classies</p> -->
-							</div>
-							<!-- <div class="pull-right">
-								<a
-									href="#basic-form1"
-									class="btn btn-primary btn-sm scroll-click"
-									rel="content-y"
-									data-toggle="collapse"
-									role="button"
-									><i class="fa fa-code"></i> Source Code</a
-								>
-							</div> -->
-						</div>
-						<form>
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Document Name</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										class="form-control"
-										type="text"
-										placeholder="Enter Document Name"
-									/>
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Document Title</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										class="form-control"
-										placeholder="Enter Document Title"
-										type="text"
-									/>
-								</div>
-							</div>
-                           
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Product Brand</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										class="form-control"
-										placeholder="Enter Product Brand"
-                                        type="text"
-									/>
-								</div>
-							</div>
-							<!-- <div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Document Category</label>
-								<div class="col-sm-12 col-md-10">
-									<input
-										class="form-control"
-										value="https://getbootstrap.com"
-										type="url"
-									/>
-								</div>
-							</div> -->
-                            <div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Document Category</label>
-								<div class="col-sm-12 col-md-10">
-									<select class="custom-select col-12">
-										<option selected="">Choose...</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									</select>
-								</div>
-							</div>
-                            <div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Document Level</label>
-								<div class="col-sm-12 col-md-10">
-									<select class="custom-select col-12">
-										<option selected="">Choose...</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									</select>
-								</div>
-							</div>
-                            <div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Document Tags</label>
-								<div class="col-sm-12 col-md-10">
-									<select class="custom-select col-12">
-										<option selected="">Choose...</option>
-										<option value="1">One</option>
-										<option value="2">Two</option>
-										<option value="3">Three</option>
-									</select>
-								</div>
-							</div>
-                            <div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Select Color</label>
-								<div class="col-sm-12 col-md-10">
-									<input class="form-control" value="#563d7c" type="color" />
-								</div>
-							</div>
-                            <div class="form-group">
-								<label>Document Description</label>
-								<textarea class="form-control"></textarea>
-                               
-							</div>
-                            <div class="form-group">
-								<label>Add Document</label>
-								<div class="custom-file">
-									<input type="file" class="custom-file-input" />
-									<label class="custom-file-label">Choose file</label>
-								</div>
-							</div>
-
-
-				
-					
-	
-	</div>
-</form>
-						<div class="collapse collapse-box" id="input-validation-form">
-							<div class="code-box">
-								<div class="clearfix">
-									<a
-										href="javascript:;"
-										class="btn btn-primary btn-sm code-copy pull-left"
-										data-clipboard-target="#input-validation"
-										><i class="fa fa-clipboard"></i> Copy Code</a
-									>
-									<a
-										href="#input-validation-form"
-										class="btn btn-primary btn-sm pull-right"
-										rel="content-y"
-										data-toggle="collapse"
-										role="button"
-										><i class="fa fa-eye-slash"></i> Hide Code</a
-									>
-								</div>
-								<pre><code class="xml copy-pre" id="input-validation">
-<form>
-	<div class="row">
-		<div class="col-md-6 col-sm-12">
-			<div class="form-group has-success">
-				<label class="form-control-label">Input with success</label>
-				<input type="text" class="form-control form-control-success">
-				<div class="form-control-feedback">Success! You've done it.</div>
-				<small class="form-text text-muted">Example help text that remains unchanged.</small>
-			</div>
-			<div class="form-group has-warning">
-				<label class="form-control-label">Input with warning</label>
-				<input type="text" class="form-control form-control-warning">
-				<div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
-				<small class="form-text text-muted">Example help text that remains unchanged.</small>
-			</div>
-			<div class="form-group has-danger">
-				<label class="form-control-label">Input with danger</label>
-				<input type="text" class="form-control form-control-danger">
-				<div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-				<small class="form-text text-muted">Example help text that remains unchanged.</small>
-			</div>
-		</div>
-		<div class="col-md-6 col-sm-12">
-			<div class="form-group has-success row">
-				<label class="form-control-label col-sm-12 col-md-2 col-form-label">Input with success</label>
-				<div class="col-sm-12 col-md-10">
-					<input type="text" class="form-control form-control-success">
-					<div class="form-control-feedback">Success! You've done it.</div>
-					<small class="form-text text-muted">Example help text that remains unchanged.</small>
 				</div>
-			</div>
-			<div class="form-group has-warning row">
-				<label class="form-control-label col-sm-12 col-md-2 col-form-label">Input with warning</label>
-				<div class="col-sm-12 col-md-10">
-					<input type="text" class="form-control form-control-warning">
-					<div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
-					<small class="form-text text-muted">Example help text that remains unchanged.</small>
-				</div>
-			</div>
-			<div class="form-group has-danger row">
-				<label class="form-control-label col-sm-12 col-md-2 col-form-label">Input with danger</label>
-				<div class="col-sm-12 col-md-10">
-					<input type="text" class="form-control form-control-danger">
-					<div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-					<small class="form-text text-muted">Example help text that remains unchanged.</small>
-				</div>
-			</div>
-		</div>
-	</div>
-</form>
-							</code></pre>
-							</div>
-						</div>
-					</div>
-					<!-- Input Validation End -->
-				</div>
-				
+				<!-- <div class="footer-wrap pd-20 mb-20 card-box">
+					DeskApp - Bootstrap 4 Admin Template By
+					<a href="https://github.com/dropways" target="_blank"
+						>Ankit Hingarajiya</a
+					>
+				</div> -->
 			</div>
 		</div>
 		<!-- welcome modal start -->
@@ -1003,6 +933,37 @@
 		<script src="vendors/scripts/script.min.js"></script>
 		<script src="vendors/scripts/process.js"></script>
 		<script src="vendors/scripts/layout-settings.js"></script>
+		<!-- Slick Slider js -->
+		<script src="src/plugins/slick/slick.min.js"></script>
+		<!-- bootstrap-touchspin js -->
+		<script src="src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+		<script>
+			jQuery(document).ready(function () {
+				jQuery(".product-slider").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: true,
+					infinite: true,
+					speed: 1000,
+					fade: true,
+					asNavFor: ".product-slider-nav",
+				});
+				jQuery(".product-slider-nav").slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					asNavFor: ".product-slider",
+					dots: false,
+					infinite: true,
+					arrows: false,
+					speed: 1000,
+					centerMode: true,
+					focusOnSelect: true,
+				});
+				$("input[name='demo3_22']").TouchSpin({
+					initval: 1,
+				});
+			});
+		</script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
