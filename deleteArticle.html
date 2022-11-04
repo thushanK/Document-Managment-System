@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic Page Info -->
+	<meta charset="utf-8" />
+	<title>DMS</title>
+
+	<!-- Site favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="vendors/images/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="vendors/images/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="vendors/images/favicon-16x16.png" />
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/styles/icon-font.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBZ3SGGX85"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+
+		gtag("config", "G-GBZ3SGGX85");
+	</script>
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != "dataLayer" ? "&l=" + l : "";
+			j.async = true;
+			j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, "script", "dataLayer", "GTM-NXZMQSS");
+	</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body>
+	<div class="pre-loader">
+		<div class="pre-loader-box">
+			<div class="loader-logo">
+				<img src="vendors/images/logo.png" alt="" />
+			</div>
+			<div class="loader-progress" id="progress_div">
+				<div class="bar" id="bar1"></div>
+			</div>
+			<div class="percent" id="percent1">0%</div>
+			<div class="loading-text">Loading...</div>
+		</div>
+	</div>
+
+    <div class="header">
+        <div class="header-left">
+            <div class="menu-icon bi bi-list"></div>
+            <div class="search-toggle-icon bi bi-search" data-toggle="header_search"></div>
+            <div class="header-search">
+                <form>
+                    <div class="form-group mb-0">
+                        <i class="dw dw-search2 search-icon"></i>
+                        <input type="text" class="form-control search-input" placeholder="Search Here" />
+                        <div class="dropdown">
+                            <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                                <i class="ion-arrow-down-c"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">From</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">To</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-12 col-md-2 col-form-label">Subject</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="form-control form-control-sm form-control-line" type="text" />
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="dashboard-setting user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar">
+                        <i class="dw dw-settings2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="user-notification">
+                <div class="dropdown">
+                    <a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+                        <i class="icon-copy dw dw-notification"></i>
+                        <span class="badge notification-active"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="notification-list mx-h-350 customscroll">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/img.jpg" alt="" />
+                                        <h3>Mihiranga Kuruwita</h3>
+                                        <p>
+                                            Hey Erin, thanks for shopping at Clothstore! We’ve got tons of exciting deals in our upcoming Fall Collection
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo1.jpg" alt="" />
+                                        <h3>Manohari Madumage</h3>
+                                        <p>
+                                            Hello Elize, thanks for subscribing to USWines. We’re eager to serve you better, pls reply to this msg now with R for Red Wine, W for White, P for Rose Wine.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo2.jpg" alt="" />
+                                        <h3>Kavindu Thushan</h3>
+                                        <p>
+                                            Hi Kuruwita, your fav messaging partner now lets you instantly engage with social media leads! 
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo3.jpg" alt="" />
+                                        <h3>Ashini Imasha</h3>
+                                        <p>
+                                            Hey Manohari, we’ve stocked our shelves with assorted mint cookie treats for you. Visit your local KookieU store. Hurry! This flavor is for a limited time only.
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/photo4.jpg" alt="" />
+                                        <h3>Dilain Gumasekara</h3>
+                                        <p>
+                                            Mr. Kavindu, your package has been shipped - ETA: 9-10 A.M. on 18th October at your residence. 
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="vendors/images/img.jpg" alt="" />
+                                        <h3>Chaturiya Kumaraperuma</h3>
+                                        <p>
+                                            Hi Dan, it looks like you had an issue with your order. Sorry about that. We’re working on it right now and will send you a msg once it’s resolved.
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-info-dropdown">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <span class="user-icon">
+                            <img src="vendors/images/photo1.jpg" alt="" />
+                        </span>
+                        <span class="user-name">Wanda Maximoff</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-user1"></i> Profile</a>
+                        <a class="dropdown-item" href="profile.html"><i class="dw dw-settings2"></i> Setting</a>
+                        <a class="dropdown-item" href="faq.html"><i class="dw dw-help"></i> Help</a>
+                        <a class="dropdown-item" href="login.html"><i class="dw dw-logout"></i> Log Out</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+	<div class="right-sidebar">
+		<div class="sidebar-title">
+			<h3 class="weight-600 font-16 text-blue">
+				Layout Settings
+				<span class="btn-block font-weight-400 font-12">User Interface Settings</span>
+			</h3>
+			<div class="close-sidebar" data-toggle="right-sidebar-close">
+				<i class="icon-copy ion-close-round"></i>
+			</div>
+		</div>
+		<div class="right-sidebar-body customscroll">
+			<div class="right-sidebar-body-content">
+				<h4 class="weight-600 font-18 pb-10">Header Background</h4>
+				<div class="sidebar-btn-group pb-30 mb-10">
+					<a href="javascript:void(0);" class="btn btn-outline-primary header-white active">White</a>
+					<a href="javascript:void(0);" class="btn btn-outline-primary header-dark">Dark</a>
+				</div>
+
+				<h4 class="weight-600 font-18 pb-10">Sidebar Background</h4>
+				<div class="sidebar-btn-group pb-30 mb-10">
+					<a href="javascript:void(0);" class="btn btn-outline-primary sidebar-light">White</a>
+					<a href="javascript:void(0);" class="btn btn-outline-primary sidebar-dark active">Dark</a>
+				</div>
+
+				<h4 class="weight-600 font-18 pb-10">Menu Dropdown Icon</h4>
+				<div class="sidebar-radio-group pb-10 mb-10">
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebaricon-1" name="menu-dropdown-icon" class="custom-control-input"
+							value="icon-style-1" checked="" />
+						<label class="custom-control-label" for="sidebaricon-1"><i class="fa fa-angle-down"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebaricon-2" name="menu-dropdown-icon" class="custom-control-input"
+							value="icon-style-2" />
+						<label class="custom-control-label" for="sidebaricon-2"><i class="ion-plus-round"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebaricon-3" name="menu-dropdown-icon" class="custom-control-input"
+							value="icon-style-3" />
+						<label class="custom-control-label" for="sidebaricon-3"><i
+								class="fa fa-angle-double-right"></i></label>
+					</div>
+				</div>
+
+				<h4 class="weight-600 font-18 pb-10">Menu List Icon</h4>
+				<div class="sidebar-radio-group pb-30 mb-10">
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebariconlist-1" name="menu-list-icon" class="custom-control-input"
+							value="icon-list-style-1" checked="" />
+						<label class="custom-control-label" for="sidebariconlist-1"><i
+								class="ion-minus-round"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebariconlist-2" name="menu-list-icon" class="custom-control-input"
+							value="icon-list-style-2" />
+						<label class="custom-control-label" for="sidebariconlist-2"><i class="fa fa-circle-o"
+								aria-hidden="true"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebariconlist-3" name="menu-list-icon" class="custom-control-input"
+							value="icon-list-style-3" />
+						<label class="custom-control-label" for="sidebariconlist-3"><i class="dw dw-check"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebariconlist-4" name="menu-list-icon" class="custom-control-input"
+							value="icon-list-style-4" checked="" />
+						<label class="custom-control-label" for="sidebariconlist-4"><i
+								class="icon-copy dw dw-next-2"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebariconlist-5" name="menu-list-icon" class="custom-control-input"
+							value="icon-list-style-5" />
+						<label class="custom-control-label" for="sidebariconlist-5"><i
+								class="dw dw-fast-forward-1"></i></label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sidebariconlist-6" name="menu-list-icon" class="custom-control-input"
+							value="icon-list-style-6" />
+						<label class="custom-control-label" for="sidebariconlist-6"><i class="dw dw-next"></i></label>
+					</div>
+				</div>
+
+				<div class="reset-options pt-30 text-center">
+					<button class="btn btn-danger" id="reset-settings">
+						Reset Settings
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="left-side-bar">
+		<div class="brand-logo">
+			<a href="index.html">
+				<img src="vendors/images/logo.png" alt="" class="dark-logo" />
+				<img src="vendors/images/logo.png" alt="" class="light-logo" />
+			</a>
+			<div class="close-sidebar" data-toggle="left-sidebar-close">
+				<i class="ion-close-round"></i>
+			</div>
+		</div>
+		<div class="menu-block customscroll">
+			<div class="sidebar-menu">
+				<ul id="accordion-menu">
+					<!-- Home  -->
+					<li>
+						<a href="index.html" class="dropdown-toggle no-arrow">
+							<span class="micon bi bi-house"></span><span class="mtext">Home</span>
+						</a>
+					</li>
+					<!-- Users  -->
+					<li>
+						<a href="users.html" class="dropdown-toggle no-arrow">
+							<span class="micon bi bi-file-earmark-text"></span><span class="mtext">Users</span>
+						</a>
+					</li>
+					<!-- Email list  -->
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon bi bi-textarea-resize"></span><span class="mtext">Email Templates</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="emailList.html">View Templates</a></li>
+							<li>
+								<a href="addEmail.html">Add Templates</a>
+							</li>
+
+						</ul>
+					</li>
+					<!-- Article list   -->
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon bi bi-archive"></span><span class="mtext">Articles</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="articleList.html">View Articles</a></li>
+							<li>
+								<a href="addArticle.html">Add Articles</a>
+							</li>
+
+						</ul>
+					</li>
+					<!-- Document list   -->
+					<li class="dropdown">
+						<a href="javascript:;" class="dropdown-toggle">
+							<span class="micon bi bi-file-earmark-text"></span><span class="mtext">Documents</span>
+						</a>
+						<ul class="submenu">
+							<li><a href="documentList.html">View Documents</a></li>
+							<li>
+								<a href="addDocument.html">Add Document</a>
+							</li>
+
+						</ul>
+					</li>
+					<!-- Forums  -->
+					<li>
+						<a href="forums.html" class="dropdown-toggle no-arrow">
+							<span class="micon bi bi-command"></span><span class="mtext">Forums</span>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-menu-overlay"></div>
+
+	<div class="main-container">
+		<div class="pd-ltr-20 xs-pd-20-10">
+			<div class="min-height-200px">
+				<div class="page-header">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="title">
+								<h4>Delete Article </h4>
+							</div>
+							<nav aria-label="breadcrumb" role="navigation">
+								<ol class="breadcrumb">
+								
+									<li class="breadcrumb-item  text-danger" aria-current="page">
+										Are you sure to delete this Article
+									</li>
+								</ol>
+                                <div class="pull-right">
+                                    <a href="index.html" class="btn btn-danger btn-sm scroll-click"
+                                        rel="content-y" data-toggle="collapse" role="button"><i class=" dw dw-delete-3"></i>
+                                        Delete </a>
+                                </div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="blog-wrap">
+					<div class="container pd-0">
+						<div class="row">
+							<div class="col-md-8 col-sm-12">
+								<div class="blog-detail card-box overflow-hidden mb-30">
+									<div class="blog-img">
+										<img src="vendors/images/bg.png" alt="" />
+									</div>
+									<div class="blog-caption">
+										<h4 class="mb-10">
+											The 2022 Complete Guide to Remote Work [W/ Tips & Tricks]
+										</h4>
+										<p>
+											Because of the COVID-19 pandemic, most companies are making the switch to
+											remote work.Going remote, however, isn’t as easy as you might think.It’s a
+											difficult transition for everyone, whether you’re an employee looking to
+											improve productivity, manager looking for tools to better run their team, or
+											a job-seeker looking for a remote position. To help make the transition
+											easier for everyone, we compiled this guide!
+										</p>
+										<h5 class="mb-10">
+											Working From Home 101 - Everything You Need to Know
+										</h5>
+										<p>
+											Until recently, remote work, for most people, seemed like all sunshines and
+											rainbows.True, it DOES have a lot of benefits, including higher employee
+											productivity, lower turnover, and lower organizational costs.At the same
+											time, from an employee perspective, the benefits include:
+										</p>
+										<p>
+											However, as you probably recently noticed, remote work doesn’t mean you’ll
+											just be hanging out in your pajamas all day, chilling at home on your laptop
+											and looking at cat videos in between work.It’s actually a lot harder than
+											that. Some people thrive while working from home. And others, not so much.To
+											actually work effectively from home, you’ll need to be:
+										</p>
+										<h5 class="mb-10">To actually work effectively from home, you’ll need to be:
+										</h5>
+										<ul>
+											<li>
+												Better work-life balance.
+											</li>
+											<li>
+												ncreased productivity and focus.
+											</li>
+											<li>
+												Less stress.
+											</li>
+											<li>
+												Avoiding the commute and unnecessary office politics.
+											</li>
+											<li>
+												Saving money.
+											</li>
+											<li>
+												An excellent communicator. It’s one thing to talk with your team in real
+												life, and something completely different to keep in touch with them
+												occasionally through chat.
+											</li>
+											<li>
+												Be comfortable with working alone.
+											</li>
+											<li>
+												Be able to maintain a healthy work-life balance and have good
+												time-management skills.
+											</li>
+										</ul>
+										<h5 class="mb-10">Essential Remote Work Tips</h5>
+										<ol>
+											<li>
+												Establish your workspace
+											</li>
+											<li>
+												Eliminate distractions
+											</li>
+											<li>
+												Sign out and turn off all non-work related notifications
+											</li>
+											<li>
+												Set a schedule
+											</li>
+											<li>
+												Track time
+											</li>
+											<li>
+												Dress for work
+											</li>
+											<li>
+												Plan ahead
+											</li>
+											<li>
+												Choose what works for you
+											</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+								<div class="card-box mb-30">
+									<h5 class="pd-20 h5 mb-0">Categories</h5>
+									<div class="list-group">
+										<a href="#"
+											class="list-group-item d-flex align-items-center justify-content-between">About
+											Pristine
+											<span class="badge badge-primary badge-pill">7</span></a>
+										<a href="#"
+											class="list-group-item d-flex align-items-center justify-content-between">Career
+											<span class="badge badge-primary badge-pill">10</span></a>
+										<a href="#"
+											class="list-group-item d-flex align-items-center justify-content-between active">Work
+											From Home
+											<span class="badge badge-primary badge-pill">8</span></a>
+										<a href="#"
+											class="list-group-item d-flex align-items-center justify-content-between">Salary
+											Plan
+											<span class="badge badge-primary badge-pill">15</span></a>
+										<a href="#"
+											class="list-group-item d-flex align-items-center justify-content-between">Health
+											<span class="badge badge-primary badge-pill">5</span></a>
+									</div>
+								</div>
+								<div class="card-box mb-30">
+									<h5 class="pd-20 h5 mb-0">Comments</h5>
+
+
+									<div class="latest-post">
+										<ul>
+											<li>
+												<h4>
+													<a href="#">Your communication skills are great, and you can make
+														others understand your point clearly.</a>
+												</h4>
+												<span>Manohari Madumage</span>
+											</li>
+											<li>
+												<h4>
+													<a href="#">She is precise in giving out directions and effectively
+														communicates what she expects from her team members.</a>
+												</h4>
+												<span>Mihiranga Kuruwita</span>
+											</li>
+											<li>
+												<h4>
+													<a href="#">You are adept at communicating difficult messages and
+														decisions skillfully.</a>
+												</h4>
+												<span>
+													Kavindu Thushan
+												</span>
+											</li>
+											<li>
+												<h4>
+													<a href="#">Your direct and impersonal approach to handling
+														discussions is ineffective in boosting the morale of those
+														around you.</a>
+												</h4>
+												<span>Chaturiya Kumaraperuma</span>
+											</li>
+											<li>
+												<h4>
+													<a href="#">You need improvement in replying to emails promptly.</a>
+												</h4>
+												<span>Thisun Jayamudu</span>
+											</li>
+											<div class=" pd-20 mb-0">
+												<a href="#form-grid-form" class="btn btn-primary btn-sm scroll-click"
+													rel="content-y" data-toggle="collapse" role="button"><i
+														class="fa fa-plus"></i> Add Comment</a>
+											</div>
+										</ul>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- welcome modal start -->
+
+	<!-- welcome modal end -->
+	<!-- js -->
+	<script src="vendors/scripts/core.js"></script>
+	<script src="vendors/scripts/script.min.js"></script>
+	<script src="vendors/scripts/process.js"></script>
+	<script src="vendors/scripts/layout-settings.js"></script>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS" height="0" width="0"
+			style="display: none; visibility: hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>
