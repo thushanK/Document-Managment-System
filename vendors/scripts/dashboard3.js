@@ -250,13 +250,13 @@ var options4 = {
 					show: true,
 					label: 'Total',
 					formatter: function (w) {
-						return 260
+						return 60
 					}
 				}
 			}
 		}
 	},
-	labels: ['Flu', 'Covid-19', 'Pheumoniae', 'Diabeties'],
+	labels: ['Email Templates', 'Articles', 'Documents', 'Forums'],
 };
 
 var chart = new ApexCharts(document.querySelector("#activities-chart"), options);
